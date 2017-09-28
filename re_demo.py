@@ -159,3 +159,10 @@ print(m)
 re_telephone = re.compile(r'^(\d{3})-(\d{3,8})$')
 print(re_telephone.match('010-12345').group())
 #log: ('010', '12345')
+
+
+#demo
+#someone@gmail.com
+
+m = re.match(r'^[\d\w][\d\w\_.]+@[\d\w]+.[\d\w]+', 'wilson_dev@gmail.com').group()
+print(m)
